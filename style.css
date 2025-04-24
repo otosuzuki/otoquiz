@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  background-color: black;
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 1; /* 明るめに修正 */
+  z-index: -1;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 30px;
+}
+
+.quiz-container,
+.nickname-container,
+#result {
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+.progress-container {
+  width: 80%;
+  height: 10px;
+  background-color: #333;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #00FF99;
+  width: 0%;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
+#choices button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+#ranking {
+  text-align: left;
+  margin-top: 20px;
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#ranking h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #007BFF;
+  padding-bottom: 5px;
+}
+
+#ranking ol {
+  padding-left: 20px;
+}
+
+#ranking li {
+  margin: 5px 0;
+  font-size: 1.2rem;
+}
